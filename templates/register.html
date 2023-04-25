@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method="GET">
+      First Name:  <input type="text" name="firstname"><br>
+      Last Name:  <input type="text" name="lastname"> <br>
+      Email: <input type="email" name="email" required> <br>  
+      Password: <input type="password" name="password" minlength="5">
+      Birthday: <input type="date" name="birthday"> <br>
+      Genders: <br>
+      <input type="radio" name="Genders" value = "Male">Male <br>
+      <input type="radio" name="Genders" value="Female">Female <br>
+      <input type="radio" name="Genders" value="Other">Other <br>
+
+      Pets: <br>
+      <input type="checkbox" name="cat" value="cat" > Cat <br>
+      <input type="checkbox" name="dog" value="dog"> Dog <br>
+      
+      Cars: <br>
+      <select name="cars"> 
+        <option value = "volvo" name="volvo"> Volvo </option>
+        <option value = "Audi" name="audi"> Audi</option>
+      </select> <br>
+
+      <input type="submit" value = "Register!!">
+      <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
+
+<!-- ?
+firstname=fake  # "property" = "value"
+&lastname=man
+&email=fake%40gmail.com
+&password=12345678
+&birthday=2020-01-06
+&Genders=on
+&cat=on -->
+
+
+<!-- ?
+firstname=fake
+&lastname=man
+&email=man%40gmail.com
+&password=1234567
+&birthday=2018-01-12
+&Genders=Female
+&dog=dog
+&cars=Audi -->
